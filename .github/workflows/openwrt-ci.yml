@@ -165,8 +165,12 @@ jobs:
           # 常用软件包:
           cat >> .config <<EOF
           CONFIG_PACKAGE_curl=y
+          CONFIG_PACKAGE_util-linux=y
           CONFIG_PACKAGE_vim-fuller=y
           CONFIG_PACKAGE_wget=y
+          CONFIG_PACKAGE_iperf3=y
+          CONFIG_PACKAGE_resize2fs=y
+          CONFIG_PACKAGE_f2fs-tools=y
           EOF
 
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
